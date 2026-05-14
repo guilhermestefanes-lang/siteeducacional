@@ -20,7 +20,7 @@ theme = 'PaperMod'
     # Modo Cartão de Visitas
     [params.homeInfoParams]
         Title = "Dra. Josimayre Novelli"
-        Content = "Bem-vinda ao meu espaço acadêmico. Aqui você encontrará informações sobre minhas pesquisas, trajetórias acadêmicas e publicações recentes."
+        Content = "Bem-vinda ao nosso espaço acadêmico. Aqui você encontrará informações sobre pesquisas, trajetórias acadêmicas e publicações recentes."
 
     # Links Sociais
     [[params.socialIcons]]
@@ -29,7 +29,7 @@ theme = 'PaperMod'
     
     [[params.socialIcons]]
         name = "email"
-        url = "mailto:josimayre@exemplo.com"
+        url = "mailto:jnovelli@uem.br"
 
 [[menu.main]]
     name = "Sobre Mim"

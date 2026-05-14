@@ -19,4 +19,3 @@ Você também pode acompanhar meu trabalho através das plataformas abaixo:
 
 * **Currículo Lattes:** [Acesse aqui](http://lattes.cnpq.br/)
 * **LinkedIn:** [Seu Perfil](https://www.linkedin.com/in/)
-* **ResearchGate:** [Perfil de Pesquisa](https://www.researchgate.net/)
