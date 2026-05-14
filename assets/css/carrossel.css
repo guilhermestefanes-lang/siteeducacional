@@ -1,0 +1,57 @@
+.carrossel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 30px auto;
+    background: #f8f9fa; /* Fundo claro para combinar com o site */
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 160px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.slide {
+    display: none;
+    padding: 30px 60px;
+    height: 100%;
+    text-align: center;
+}
+.slide.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.5s;
+}
+.slide-content h3 { 
+    margin: 0 0 8px 0; 
+    color: #1e293b;
+    font-size: 20px;
+}
+.slide-content p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+.slide-content .btn {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0284c7;
+    text-decoration: underline;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+    color: #94a3b8;
+    transition: color 0.2s;
+}
+.prev:hover, .next:hover { color: #1e293b; }
+.prev { left: 15px; }
+.next { right: 15px; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }

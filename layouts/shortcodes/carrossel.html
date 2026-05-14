@@ -1,0 +1,97 @@
+<style>
+.carrossel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 30px auto;
+    background: #f8f9fa;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 160px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.meu-slide {
+    display: none;
+    padding: 30px 60px;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.meu-slide.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slide-content h3 { 
+    margin: 0 0 8px 0; 
+    color: #1e293b;
+    font-size: 20px;
+}
+.slide-content p {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+.slide-content .btn {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0284c7;
+    text-decoration: underline;
+}
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+    color: #94a3b8;
+}
+.prev-btn { left: 15px; }
+.next-btn { right: 15px; }
+</style>
+
+<div class="carrossel-container">
+  <div class="carrossel">
+    <div class="meu-slide active">
+      <div class="slide-content">
+        <h3>📢 Novo Edital Aberto</h3>
+        <p>Estão abertas as inscrições para o projeto de Multiletramentos.</p>
+        <a href="/posts" class="btn">Leia mais</a>
+      </div>
+    </div>
+    <div class="meu-slide">
+      <div class="slide-content">
+        <h3>📚 Publicação Recente</h3>
+        <p>Confira o novo artigo sobre Formação Docente publicado recentemente.</p>
+        <a href="/ensino" class="btn">Ver Publicação</a>
+      </div>
+    </div>
+    <div class="meu-slide">
+      <div class="slide-content">
+        <h3>🗓️ Próximo Evento</h3>
+        <p>Participe do nosso Workshop sobre Tecnologias no Ensino.</p>
+        <a href="/contato" class="btn">Inscreva-se</a>
+      </div>
+    </div>
+  </div>
+  <button class="prev-btn" onclick="rodarSlide(-1)">&#10094;</button>
+  <button class="next-btn" onclick="rodarSlide(1)">&#10095;</button>
+</div>
+
+<script>
+let indiceSlide = 0;
+function rodarSlide(passo) {
+  const slides = document.querySelectorAll('.meu-slide');
+  if (slides.length === 0) return;
+  slides[indiceSlide].classList.remove('active');
+  indiceSlide = (indiceSlide + passo + slides.length) % slides.length;
+  slides[indiceSlide].classList.add('active');
+}
+// Muda automaticamente a cada 5 segundos
+setInterval(() => rodarSlide(1), 5000);
+</script>

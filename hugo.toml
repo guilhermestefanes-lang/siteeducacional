@@ -1,0 +1,81 @@
+baseURL = 'http://example.org/'
+languageCode = 'pt-br'
+title = 'Grupo de pesquisas em multiletramentos, educação linguística e formação docente'
+theme = 'PaperMod'
+
+[params.label]
+    text = "Pesquisas em multiletramentos, educação linguística e formação docente"
+    icon = "logo.png"
+    iconHeight = 130
+
+[params]
+
+    # 1. Isso remove o botão de sol/lua do menu
+    disableThemeToggle = true
+
+    # 2. Isso força o site a abrir sempre no modo claro (light)
+    # Se você preferir o modo escuro, troque "light" por "dark"
+    defaultTheme = "light"
+
+    # Modo Cartão de Visitas
+    [params.homeInfoParams]
+        Title = "Dra. Josimayre Novelli"
+        Content = "Bem-vinda ao meu espaço acadêmico. Aqui você encontrará informações sobre minhas pesquisas, trajetórias acadêmicas e publicações recentes."
+
+    # Links Sociais
+    [[params.socialIcons]]
+        name = "cv"
+        url = "http://lattes.cnpq.br/"
+    
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:josimayre@exemplo.com"
+
+[[menu.main]]
+    name = "Sobre Mim"
+    url = "/sobre/"
+    weight = 10
+
+[[menu.main]]
+    name = "Pesquisa"
+    url = "/pesquisa/"
+    weight = 20
+
+[[menu.main]]
+    name = "Publicações"
+    url = "/publicacoes/"
+    weight = 30
+
+[[menu.main]]
+    name = "Ensino"
+    url = "/ensino/"
+    weight = 40
+
+[[menu.main]]
+    name = "Contato"
+    url = "/contato/"
+    weight = 90
+
+[[menu.main]]
+    name = "Eventos Acadêmicos"
+    url = "/Eventos Acadêmicos/"
+    weight = 50
+
+[[menu.main]]
+    name = "Pesquisadores"
+    url = "/Pesquisadores/"
+    weight = 60
+
+[[menu.main]]
+    name = "Dissertações e Teses"
+    url = "/Eventos Acadêmicos/"
+    weight = 70
+
+[[menu.main]]
+    name = "Agenda"
+    url = "/Agenda/"
+    weight = 80
+
+[markup.goldmark.renderer]
+    unsafe = true
+    
