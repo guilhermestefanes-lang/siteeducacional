@@ -47,34 +47,30 @@ theme = 'PaperMod'
     weight = 30
 
 [[menu.main]]
-    name = "Ensino"
-    url = "/ensino/"
-    weight = 40
-
-[[menu.main]]
-    name = "Contato"
-    url = "/contato/"
-    weight = 90
-
-[[menu.main]]
     name = "Eventos Acadêmicos"
     url = "/eventos/"
-    weight = 50
+    weight = 40
 
 [[menu.main]]
     name = "Pesquisadores"
     url = "/Pesquisadores/"
-    weight = 60
+    weight = 50
 
 [[menu.main]]
     name = "Dissertações e Teses"
     url = "/Eventos Acadêmicos/"
-    weight = 70
+    weight = 60
 
 [[menu.main]]
     name = "Agenda"
     url = "/Agenda/"
+    weight = 70
+
+[[menu.main]]
+    name = "Contato"
+    url = "/contato/"
     weight = 80
+
 
 [markup.goldmark.renderer]
     unsafe = true
