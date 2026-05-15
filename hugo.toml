@@ -1,6 +1,6 @@
 baseURL = "https://multieduensino.netlify.app/"
 languageCode = 'pt-br'
-title = 'Multiletramentos, Educação Linguística e formação docente'
+title = 'Multiletramentos, Educação Linguística e Formação docente'
 theme = 'PaperMod'
 
 [params.label]
