@@ -49,4 +49,29 @@
     background-clip: text !important;
     display: inline-block;
 }
+
+/* ==========================================================================
+   Apenas adicionado a regra de fundo abaixo, sem alterar o CSS acima
+   ========================================================================== */
+body {
+    background-image: url("/images/fundo-panoramico.jpg") !important;
+    background-attachment: fixed !important; 
+    background-position: center center !important; 
+    background-repeat: no-repeat !important;
+    background-size: 100vw auto !important; 
+}
+
+/* Opcional: Mantém o texto principal à frente do fundo com segurança */
+.main, .post-content, article {
+    position: relative;
+    z-index: 1;
+}
+
+/* Desativa o fundo em telas menores para não prejudicar a leitura no celular */
+@media screen and (max-width: 1024px) {
+    body {
+        background-image: none !important;
+        background-color: #ffffff !important;
+    }
+}
 </style>
