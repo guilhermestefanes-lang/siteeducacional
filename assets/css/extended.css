@@ -1,0 +1,37 @@
+/* 1. Centraliza todo o cabeçalho (Logo + Menu) no topo do site */
+.nav {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 15px !important;
+    padding-top: 20px;
+}
+
+/* Centraliza os itens do menu logo abaixo do logo */
+.menu {
+    justify-content: center !important;
+    margin: 0 auto !important;
+}
+
+/* 2. Aplica o colorido do Logo diretamente no texto MULTIEDU */
+.logo a {
+    font-size: 32px !important;
+    font-weight: 900 !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase;
+    
+    /* Cria o degradê com as cores exatas do seu logo (Azul, Verde, Roxo, Laranja, Amarelo...) */
+    background: linear-gradient(to right, #0284c7 12%, #0f766e 25%, #22c55e 37%, #6b21a8 50%, #38bdf8 62%, #f97316 75%, #eab308 87%, #1e3a8a 100%);
+    
+    /* Faz a cor do degradê entrar apenas dentro das letras */
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block !important;
+}
+
+/* Ajusta o posicionamento do ícone do logo para ficar bonito com o texto */
+.logo img {
+    margin-bottom: 10px !important;
+}

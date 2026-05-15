@@ -1,12 +1,12 @@
 baseURL = "https://multieduensino.netlify.app/"
 languageCode = 'pt-br'
-title = 'Grupo de pesquisas em multiletramentos, educação linguística e formação docente'
+title = 'Multiletramentos, Educação Linguística e formação docente'
 theme = 'PaperMod'
 
 [params.label]
-    text = "Pesquisas em multiletramentos, educação linguística e formação docente"
+    text = ""
     icon = "logo.png"
-    iconHeight = 130
+    iconHeight = 100 
 
 [params]
 

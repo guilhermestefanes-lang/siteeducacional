@@ -1,0 +1,52 @@
+<nav class="nav" style="display: flex; flex-direction: column; width: 100%; padding: 20px 0; gap: 15px;">
+    
+    <div style="display: flex; align-items: center; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative;">
+        
+        <div style="flex-shrink: 0; margin-right: auto;">
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="Home">
+                <img src="/logo.png" alt="Logo MULTIEDU" height="130" style="display: block;">
+            </a>
+        </div>
+        
+        <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 100%; max-width: 950px; text-align: center; pointer-events: none;">
+            <h1 style="font-size: 1.8rem; font-weight: 800; margin: 0; line-height: 1.2; letter-spacing: -0.5px; pointer-events: auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; white-space: nowrap;">
+                <span class="titulo-colorido-multiedu">Multiletramentos, Educação Linguística e formação docente</span>
+            </h1>
+        </div>
+        
+        <div style="width: 130px; flex-shrink: 0; margin-left: auto; opacity: 0; pointer-events: none;"></div>
+    </div>
+
+    <ul id="menu" style="display: flex; list-style: none; gap: 20px; padding: 0; margin: 15px 0 0 0; flex-wrap: wrap; justify-content: center; width: 100%;">
+        {{- range .Site.Menus.main }}
+        <li>
+            <a href="{{ .URL | absLangURL }}" title="{{ .Name }}" style="font-size: 1.05rem; font-weight: 600; color: #1d1d1f; text-decoration: none; padding: 5px 10px;">
+                {{ .Name }}
+            </a>
+        </li>
+        {{- end }}
+    </ul>
+</nav>
+
+<style>
+.titulo-colorido-multiedu {
+    background: linear-gradient(
+        to right, 
+        #0284c7 0%,    /* Início em Azul (Multi...) */
+        #0284c7 20%,   /* Transição no meio de ...letramentos */
+        #0f766e 28%,   /* Tom esverdeado na transição */
+        #22c55e 35%,   /* Verde brilhante (Educação) */
+        #22c55e 48%,   /* Sustenta o verde */
+        #6b21a8 58%,   /* Roxo acadêmico (Linguística) */
+        #6b21a8 70%,   /* Sustenta o roxo */
+        #1d1d1f 74%,   /* O "e" neutro */
+        #f97316 82%,   /* Laranja vibrante (formação) */
+        #eab308 92%,   /* Amarelo/Ouro misturando no final */
+        #6b21a8 100%   /* Toque de roxo na pontinha da palavra docente */
+    );
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    display: inline-block;
+}
+</style>
