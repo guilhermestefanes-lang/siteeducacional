@@ -25,7 +25,7 @@ theme = 'PaperMod'
     # Links Sociais
     [[params.socialIcons]]
         name = "cv"
-        url = "http://lattes.cnpq.br/"
+        url = "http://lattes.cnpq.br/4739538854223373"
     
     [[params.socialIcons]]
         name = "email"
