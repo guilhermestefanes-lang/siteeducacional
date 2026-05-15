@@ -18,4 +18,4 @@ Se você tiver interesse em parcerias acadêmicas, orientações ou dúvidas sob
 Você também pode acompanhar meu trabalho através das plataformas abaixo:
 
 * **Currículo Lattes:** [Acesse aqui](http://lattes.cnpq.br/4739538854223373)
-* **LinkedIn:** [Seu Perfil](https://www.linkedin.com/in/) 
+* **LinkedIn:** [Seu Perfil](https://www.linkedin.com/in/josimayre-novelli-14533834a/) 
